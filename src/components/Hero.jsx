@@ -90,7 +90,7 @@ const Hero = () => {
               
               {/* Floating Elements */}
               <div className="absolute top-10 left-10 w-16 h-16 bg-dark-800 rounded-lg flex items-center justify-center animate-bounce-slow">
-                <span className="text-primary-400 font-mono text-sm">React</span>
+                <span className="text-primary-400 font-mono text-sm">NestJs</span>
               </div>
               
               <div className="absolute top-20 right-10 w-16 h-16 bg-dark-800 rounded-lg flex items-center justify-center animate-bounce-slow" style={{animationDelay: '0.5s'}}>
