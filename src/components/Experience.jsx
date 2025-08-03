@@ -9,8 +9,8 @@ const Experience = () => {
       period: '2025 - Present',
       location: 'Remote',
       description: 'An AI chatbot designed to assist users with knowing what is going on with their body',
-      technologies: ['React', 'Node.js', 'AWS', 'Docker', 'MongoDB'],
-      type: 'Full-time'
+      technologies: ['Figma'],
+      type: 'Part-time'
     },
   ]
 
@@ -104,27 +104,27 @@ const Experience = () => {
             <div className="w-12 h-12 bg-primary-500/20 rounded-lg flex items-center justify-center mb-4">
               <FaBriefcase className="text-primary-400" />
             </div>
-            <h4 className="text-lg font-semibold text-white mb-2">Computer Science</h4>
-            <p className="text-primary-400 mb-2">University of Technology</p>
-            <p className="text-dark-300 text-sm">Bachelor's Degree • 2015-2019</p>
+            <h4 className="text-lg font-semibold text-white mb-2">Software Programming & Embedded Systems</h4>
+            <p className="text-primary-400 mb-2">Rwanda Coding Academy</p>
+            <p className="text-dark-300 text-sm">High School • 2024-present</p>
           </div>
 
           <div className="card">
             <div className="w-12 h-12 bg-primary-500/20 rounded-lg flex items-center justify-center mb-4">
               <FaBriefcase className="text-primary-400" />
             </div>
-            <h4 className="text-lg font-semibold text-white mb-2">AWS Certified</h4>
-            <p className="text-primary-400 mb-2">Solutions Architect</p>
-            <p className="text-dark-300 text-sm">Professional Level • 2022</p>
+            <h4 className="text-lg font-semibold text-white mb-2">Posinnove Certified</h4>
+            <p className="text-primary-400 mb-2">UI/UX Design</p>
+            <p className="text-dark-300 text-sm">Beginner Level • 2024</p>
           </div>
 
           <div className="card">
             <div className="w-12 h-12 bg-primary-500/20 rounded-lg flex items-center justify-center mb-4">
               <FaBriefcase className="text-primary-400" />
             </div>
-            <h4 className="text-lg font-semibold text-white mb-2">Blockchain Developer</h4>
-            <p className="text-primary-400 mb-2">Ethereum Foundation</p>
-            <p className="text-dark-300 text-sm">Certification • 2021</p>
+            <h4 className="text-lg font-semibold text-white mb-2">Udacity Certified</h4>
+            <p className="text-primary-400 mb-2">Software Developer</p>
+            <p className="text-dark-300 text-sm">Beginner • 2024</p>
           </div>
         </div>
       </div>

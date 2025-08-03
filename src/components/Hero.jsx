@@ -1,16 +1,12 @@
 import { useState, useEffect } from 'react'
-import { FaGithub, FaLinkedin, FaTwitter, FaDownload } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaTwitter, FaDownload, FaInstagram } from 'react-icons/fa'
 
 const Hero = () => {
   const [currentRole, setCurrentRole] = useState(0)
   const roles = [
     'Frontend Developer',
     'Backend Developer', 
-    'UI/UX Designer',
-    'AI Engineer',
-    'Blockchain Developer',
-    'Database Developer',
-    'DevOps Engineer'
+    'UI/UX Designer'
   ]
 
   useEffect(() => {
@@ -45,19 +41,9 @@ const Hero = () => {
 
             <p className="text-lg md:text-xl text-dark-300 max-w-2xl mx-auto lg:mx-0">
               Crafting digital experiences with cutting-edge technology. 
-              From frontend to blockchain, I bring ideas to life with code.
+              I bring ideas to life with code.
             </p>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <button className="btn-primary">
-                View My Work
-              </button>
-              <button className="btn-outline flex items-center justify-center gap-2">
-                <FaDownload />
-                Download CV
-              </button>
-            </div>
 
             {/* Social Links */}
             <div className="flex justify-center lg:justify-start space-x-4">
@@ -78,6 +64,12 @@ const Hero = () => {
                 className="w-12 h-12 bg-dark-800 hover:bg-primary-500 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
               >
                 <FaTwitter className="text-white" />
+              </a>
+              <a 
+                href="#" 
+                className="w-12 h-12 bg-dark-800 hover:bg-primary-500 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+              >
+                <FaInstagram className="text-white" />
               </a>
             </div>
           </div>

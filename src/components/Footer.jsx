@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaPhone } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaPhone, FaInstagram } from 'react-icons/fa'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -15,7 +15,8 @@ const Footer = () => {
   const socialLinks = [
     { icon: <FaGithub />, href: '#', label: 'GitHub' },
     { icon: <FaLinkedin />, href: '#', label: 'LinkedIn' },
-    { icon: <FaTwitter />, href: '#', label: 'Twitter' }
+    { icon: <FaTwitter />, href: '#', label: 'Twitter' },
+    { icon: <FaInstagram />, href: '#', label: 'Instagram' }
   ]
 
   const scrollToSection = (sectionId) => {
