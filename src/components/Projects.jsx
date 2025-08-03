@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { FaGithub, FaExternalLinkAlt, FaReact, FaNodeJs,FaPaintBrush } from 'react-icons/fa'
+import { FaGithub, FaExternalLinkAlt, FaReact, FaNodeJs,FaPaintBrush, FaHtml5, FaCss3 } from 'react-icons/fa'
 import { SiTypescript, SiMongodb,SiPostgresql,SiTailwindcss } from 'react-icons/si'
 
 const Projects = () => {
@@ -84,6 +84,18 @@ const projects = [
       icons: [<FaReact />, <SiTailwindcss />, <FaNodeJs />, <SiMongodb />],
       github: 'https://github.com/Amani-Ishimwe/CitizenEngagement.git',
       live: '#',
+      featured: false
+    },
+    {
+      id: 7,
+      title: 'University Landing Page',
+      description: 'A full-featured e-commerce platform with product management, shopping cart, and payment integration.',
+      image: '/api/placeholder/400/250',
+      category: 'frontend',
+      technologies: ['React', 'Node.js', 'MongoDB'],
+      icons: [<FaHtml5 />, <FaCss3 />],
+      github: 'https://github.com/Amani-Ishimwe/university.git',
+      live: 'https://shimmering-dasik-399777.netlify.app/',
       featured: false
     }
 
