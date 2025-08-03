@@ -12,10 +12,8 @@ const Skills = () => {
     { id: 'all', label: 'All Skills' },
     { id: 'frontend', label: 'Frontend' },
     { id: 'backend', label: 'Backend' },
-    { id: 'database', label: 'Database' },
-    { id: 'ai-ml', label: 'AI/ML' },
-    { id: 'blockchain', label: 'Blockchain' },
-    { id: 'devops', label: 'DevOps' }
+    { id: 'ui/ux', label: 'UI/UX Design' },
+
   ]
 
   const skills = [
@@ -25,29 +23,23 @@ const Skills = () => {
     { name: 'JavaScript', icon: <FaJs />, category: 'frontend', level: 95, color: '#F7DF1E' },
     { name: 'HTML5', icon: <FaHtml5 />, category: 'frontend', level: 90, color: '#E34F26' },
     { name: 'CSS3', icon: <FaCss3Alt />, category: 'frontend', level: 85, color: '#1572B6' },
-    { name: 'Figma', icon: <FaFigma />, category: 'frontend', level: 80, color: '#F24E1E' },
+
+    // UI/UX Design
+    { name: 'Figma', icon: <FaFigma />, category: 'ui/ux', level: 80, color: '#F24E1E' },
+    { name: 'Adobe XD', icon: <FaFigma />, category: 'ui/ux', level: 75, color: '#FF61F6' },  
     
     // Backend
     { name: 'Node.js', icon: <FaNodeJs />, category: 'backend', level: 90, color: '#339933' },
     { name: 'Python', icon: <FaPython />, category: 'backend', level: 85, color: '#3776AB' },
+    { name: 'NestJs', icon: <FaNodeJs />, category: 'backend', level: 80, color: '#E0234E' },
+    { name: 'Express.js', icon: <FaNodeJs />, category: 'backend', level: 85, color: '#000000' },
+
     
     // Database
-    { name: 'MongoDB', icon: <SiMongodb />, category: 'database', level: 85, color: '#47A248' },
-    { name: 'PostgreSQL', icon: <SiPostgresql />, category: 'database', level: 80, color: '#336791' },
-    { name: 'MySQL', icon: <FaDatabase />, category: 'database', level: 85, color: '#4479A1' },
-    
-    // AI/ML
-    { name: 'TensorFlow', icon: <SiTensorflow />, category: 'ai-ml', level: 75, color: '#FF6F00' },
-    { name: 'Python ML', icon: <FaPython />, category: 'ai-ml', level: 80, color: '#3776AB' },
-    
-    // Blockchain
-    { name: 'Solidity', icon: <SiSolidity />, category: 'blockchain', level: 70, color: '#363636' },
-    { name: 'Ethereum', icon: <FaEthereum />, category: 'blockchain', level: 75, color: '#627EEA' },
-    
-    // DevOps
-    { name: 'Docker', icon: <FaDocker />, category: 'devops', level: 80, color: '#2496ED' },
-    { name: 'AWS', icon: <FaAws />, category: 'devops', level: 75, color: '#FF9900' },
-    { name: 'Git', icon: <FaGitAlt />, category: 'devops', level: 90, color: '#F05032' }
+    { name: 'MongoDB', icon: <SiMongodb />, category: 'backend', level: 85, color: '#47A248' },
+    { name: 'PostgreSQL', icon: <SiPostgresql />, category: 'backend', level: 80, color: '#336791' },
+    { name: 'MySQL', icon: <FaDatabase />, category: 'backend', level: 85, color: '#4479A1' },
+
   ]
 
   const filteredSkills = activeCategory === 'all' 
@@ -117,15 +109,15 @@ const Skills = () => {
       {/* Skills Summary */}
       <div className="mt-16 grid md:grid-cols-3 gap-8">
         <div className="text-center">
-          <div className="text-4xl font-bold gradient-text mb-2">18+</div>
+          <div className="text-4xl font-bold gradient-text mb-2">9+</div>
           <div className="text-dark-300">Technologies</div>
         </div>
         <div className="text-center">
-          <div className="text-4xl font-bold gradient-text mb-2">7</div>
+          <div className="text-4xl font-bold gradient-text mb-2">3</div>
           <div className="text-dark-300">Categories</div>
         </div>
         <div className="text-center">
-          <div className="text-4xl font-bold gradient-text mb-2">5+</div>
+          <div className="text-4xl font-bold gradient-text mb-2">1+</div>
           <div className="text-dark-300">Years Experience</div>
         </div>
       </div>

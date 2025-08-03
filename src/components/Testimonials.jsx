@@ -7,48 +7,12 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Sarah Johnson',
-      position: 'CEO, TechStart Inc',
-      company: 'TechStart Inc',
+      name: 'Muhire Moise',
+      position: 'Software Tester, Umbrella Tech',
+      company: 'Umbrella Tech',
       rating: 5,
-      text: 'Amani Samuel is an exceptional developer who delivered our e-commerce platform ahead of schedule. His expertise in React and Node.js is outstanding, and he consistently provided innovative solutions to complex problems.',
-      avatar: 'SJ'
-    },
-    {
-      id: 2,
-      name: 'Michael Chen',
-      position: 'CTO, DeFi Ventures',
-      company: 'DeFi Ventures',
-      rating: 5,
-      text: 'Working with Amani on our blockchain project was a game-changer. His knowledge of Solidity and smart contract development is top-notch. He helped us build a secure and scalable DeFi platform.',
-      avatar: 'MC'
-    },
-    {
-      id: 3,
-      name: 'Emily Rodriguez',
-      position: 'Product Manager, DataFlow',
-      company: 'DataFlow',
-      rating: 5,
-      text: 'Amani\'s AI/ML expertise helped us implement a sophisticated recommendation system. His Python skills and understanding of machine learning algorithms are exceptional. Highly recommended!',
-      avatar: 'ER'
-    },
-    {
-      id: 4,
-      name: 'David Thompson',
-      position: 'Lead Developer, WebSolutions',
-      company: 'WebSolutions',
-      rating: 5,
-      text: 'Amani is a true full-stack developer with excellent communication skills. He not only delivered high-quality code but also mentored our junior developers. His attention to detail is remarkable.',
-      avatar: 'DT'
-    },
-    {
-      id: 5,
-      name: 'Lisa Wang',
-      position: 'Founder, StartupXYZ',
-      company: 'StartupXYZ',
-      rating: 5,
-      text: 'Amani helped us build our MVP from scratch. His expertise in modern web technologies and his ability to work under pressure made him an invaluable team member. We couldn\'t have done it without him.',
-      avatar: 'LW'
+      text: 'Amani Samuel is an exceptional developer who delivered our project on time and with high quality. His attention to detail and problem-solving skills are impressive.',
+      avatar: 'MM'
     }
   ]
 
@@ -143,11 +107,11 @@ const Testimonials = () => {
           <div className="text-dark-300">Client Satisfaction</div>
         </div>
         <div className="text-center">
-          <div className="text-4xl font-bold gradient-text mb-2">50+</div>
+          <div className="text-4xl font-bold gradient-text mb-2">5+</div>
           <div className="text-dark-300">Projects Completed</div>
         </div>
         <div className="text-center">
-          <div className="text-4xl font-bold gradient-text mb-2">30+</div>
+          <div className="text-4xl font-bold gradient-text mb-2">1+</div>
           <div className="text-dark-300">Happy Clients</div>
         </div>
         <div className="text-center">

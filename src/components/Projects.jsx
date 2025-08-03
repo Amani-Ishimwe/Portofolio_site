@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { FaGithub, FaExternalLinkAlt, FaReact, FaNodeJs, FaPython, FaEthereum } from 'react-icons/fa'
-import { SiTypescript, SiMongodb, SiSolidity } from 'react-icons/si'
+import { FaGithub, FaExternalLinkAlt, FaReact, FaNodeJs,FaPaintBrush } from 'react-icons/fa'
+import { SiTypescript, SiMongodb,SiPostgresql,SiTailwindcss } from 'react-icons/si'
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all')
@@ -10,43 +10,42 @@ const Projects = () => {
     { id: 'frontend', label: 'Frontend' },
     { id: 'backend', label: 'Backend' },
     { id: 'fullstack', label: 'Full Stack' },
-    { id: 'blockchain', label: 'Blockchain' },
-    { id: 'ai-ml', label: 'AI/ML' }
+    { id: 'ui/ux', label: 'UI/UX Design' }
   ]
 
-  const projects = [
+const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A modern e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.',
+      title: 'Blog Management Api',
+      description: 'A modern blog management API built with  Node.js,Expressjs and MongoDB. Features include user authentication, post creation, and comment management.',
       image: '/api/placeholder/400/250',
-      category: 'fullstack',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      icons: [<FaReact />, <FaNodeJs />, <SiMongodb />],
+      category: 'backend',
+      technologies: [ 'Node.js', 'MongoDB', 'Express.js', 'JWT'],
+      icons: [ <FaNodeJs />, <SiMongodb />],
       github: '#',
       live: '#',
       featured: true
     },
     {
       id: 2,
-      title: 'DeFi Dashboard',
-      description: 'A decentralized finance dashboard for tracking cryptocurrency portfolios, yield farming, and DeFi protocols.',
+      title: 'Visitor Management System',
+      description: 'A system for managing visitor check-ins',
       image: '/api/placeholder/400/250',
-      category: 'blockchain',
-      technologies: ['React', 'Solidity', 'Web3.js', 'Ethereum'],
-      icons: [<FaReact />, <SiSolidity />, <FaEthereum />],
+      category: 'backend',
+      technologies: ['NestJs', 'Postgresql', 'PrismaORM'],
+      icons: [<FaNodeJs />, <SiPostgresql />],
       github: '#',
       live: '#',
       featured: true
     },
     {
       id: 3,
-      title: 'AI Chat Assistant',
+      title: 'Menya Bot',
       description: 'An intelligent chatbot powered by machine learning algorithms for customer support and automated responses.',
       image: '/api/placeholder/400/250',
-      category: 'ai-ml',
-      technologies: ['Python', 'TensorFlow', 'React', 'FastAPI'],
-      icons: [<FaPython />, <FaReact />],
+      category: 'ui/ux',
+      technologies: ['Figma'],
+      icons: [<FaPaintBrush />],
       github: '#',
       live: '#',
       featured: false
@@ -56,36 +55,24 @@ const Projects = () => {
       title: 'Task Management App',
       description: 'A collaborative task management application with real-time updates, team collaboration, and progress tracking.',
       image: '/api/placeholder/400/250',
-      category: 'frontend',
-      technologies: ['React', 'TypeScript', 'Firebase'],
-      icons: [<FaReact />, <SiTypescript />],
+      category: 'backend',
+      technologies: ['Nestjs', 'PrismaORM', 'Postgresql'],
+      icons: [<FaNodeJs />, <SiTypescript />, <SiPostgresql />],
       github: '#',
       live: '#',
       featured: false
     },
     {
       id: 5,
-      title: 'API Gateway Service',
-      description: 'A microservices API gateway built with Node.js for handling authentication, rate limiting, and request routing.',
+      title: 'Blog and Magazine',
+      description: 'A platform for writers and readers to share and discover articles on various topics.',
       image: '/api/placeholder/400/250',
-      category: 'backend',
-      technologies: ['Node.js', 'Express', 'Redis', 'Docker'],
-      icons: [<FaNodeJs />],
+      category: 'frontend',
+      technologies: ['React','Tailwind CSS'],
+      icons: [<FaReact />, <SiTailwindcss />],
       github: '#',
       live: '#',
       featured: false
-    },
-    {
-      id: 6,
-      title: 'NFT Marketplace',
-      description: 'A decentralized NFT marketplace for creating, buying, and selling digital art and collectibles.',
-      image: '/api/placeholder/400/250',
-      category: 'blockchain',
-      technologies: ['React', 'Solidity', 'IPFS', 'MetaMask'],
-      icons: [<FaReact />, <SiSolidity />, <FaEthereum />],
-      github: '#',
-      live: '#',
-      featured: true
     }
   ]
 
