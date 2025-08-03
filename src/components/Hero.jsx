@@ -48,25 +48,25 @@ const Hero = () => {
             {/* Social Links */}
             <div className="flex justify-center lg:justify-start space-x-4">
               <a 
-                href="#" 
+                href="https://github.com/Amani-Ishimwe" 
                 className="w-12 h-12 bg-dark-800 hover:bg-primary-500 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
               >
                 <FaGithub className="text-white" />
               </a>
               <a 
-                href="#" 
+                href="https://www.linkedin.com/in/amani-ishimwe-409825331/" 
                 className="w-12 h-12 bg-dark-800 hover:bg-primary-500 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
               >
                 <FaLinkedin className="text-white" />
               </a>
               <a 
-                href="#" 
+                href="https://x.com/AmaniIsh2" 
                 className="w-12 h-12 bg-dark-800 hover:bg-primary-500 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
               >
                 <FaTwitter className="text-white" />
               </a>
               <a 
-                href="#" 
+                href="https://www.instagram.com/amani_ishimwe10/" 
                 className="w-12 h-12 bg-dark-800 hover:bg-primary-500 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
               >
                 <FaInstagram className="text-white" />

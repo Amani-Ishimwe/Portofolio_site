@@ -34,10 +34,10 @@ const Contact = () => {
   ]
 
   const socialLinks = [
-    { icon: <FaGithub />, href: '#', label: 'GitHub' },
-    { icon: <FaLinkedin />, href: '#', label: 'LinkedIn' },
-    { icon: <FaTwitter />, href: '#', label: 'Twitter' },
-    { icon: <FaInstagram />, href: '#', label: 'Instagram' }
+    { icon: <FaGithub />, href: 'https://github.com/Amani-Ishimwe', label: 'GitHub' },
+    { icon: <FaLinkedin />, href: 'https://www.linkedin.com/in/amani-ishimwe-409825331/', label: 'LinkedIn' },
+    { icon: <FaTwitter />, href: 'https://x.com/AmaniIsh2', label: 'Twitter' },
+    { icon: <FaInstagram />, href: 'https://www.instagram.com/amani_ishimwe10/', label: 'Instagram' }
   ]
 
   const validateForm = () => {
