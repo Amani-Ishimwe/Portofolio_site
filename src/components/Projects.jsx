@@ -97,8 +97,19 @@ const projects = [
       github: 'https://github.com/Amani-Ishimwe/university.git',
       live: 'https://shimmering-dasik-399777.netlify.app/',
       featured: false
+    },
+    {
+      id: 8,
+      title: 'Portfolio Website',   
+      description: 'A personal portfolio website showcasing my projects, skills, and experience.',
+      image: '/api/placeholder/400/250',
+      category: 'frontend',
+      technologies: ['React', 'Tailwind CSS'],
+      icons: [<FaReact />, <SiTailwindcss />],
+      github: 'https://github.com/Amani-Ishimwe/Portofolio_site.git',
+      live: 'https://amaniportofolio.netlify.app/',
+      featured: false
     }
-
   ]
 
   const filteredProjects = activeFilter === 'all' 
