@@ -2,7 +2,7 @@ import { FaBriefcase, FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa'
 
 const Experience = () => {
   const experiences = [
-    {
+   /* {
       id: 1,
       title: 'UI/UX Designer',
       company: 'Personal Project: Menya Bot',
@@ -11,7 +11,7 @@ const Experience = () => {
       description: 'An AI chatbot designed to assist users with knowing what is going on with their body',
       technologies: ['Figma'],
       type: 'Part-time'
-    },
+    },*/
   ]
 
   return (

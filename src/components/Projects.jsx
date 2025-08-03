@@ -22,7 +22,7 @@ const projects = [
       category: 'backend',
       technologies: [ 'Node.js', 'MongoDB', 'Express.js', 'JWT'],
       icons: [ <FaNodeJs />, <SiMongodb />],
-      github: '#',
+      github: 'https://github.com/Amani-Ishimwe/blog-management-api.git',
       live: '#',
       featured: true
     },
@@ -34,7 +34,7 @@ const projects = [
       category: 'backend',
       technologies: ['NestJs', 'Postgresql', 'PrismaORM'],
       icons: [<FaNodeJs />, <SiPostgresql />],
-      github: '#',
+      github: 'https://github.com/Amani-Ishimwe/Visitor_Management_System-NestJs.git',
       live: '#',
       featured: true
     },
@@ -47,7 +47,7 @@ const projects = [
       technologies: ['Figma'],
       icons: [<FaPaintBrush />],
       github: '#',
-      live: '#',
+      live: 'https://www.figma.com/proto/JTZZaLW3PeucwDQvX5vRbh/Menya?node-id=57-1841&t=uXJVyZuUw8vDr8bV-1',
       featured: false
     },
     {
@@ -58,7 +58,7 @@ const projects = [
       category: 'backend',
       technologies: ['Nestjs', 'PrismaORM', 'Postgresql'],
       icons: [<FaNodeJs />, <SiTypescript />, <SiPostgresql />],
-      github: '#',
+      github: 'https://github.com/Amani-Ishimwe/Task-Management-System-NestJS.git',
       live: '#',
       featured: false
     },
@@ -70,10 +70,23 @@ const projects = [
       category: 'frontend',
       technologies: ['React','Tailwind CSS'],
       icons: [<FaReact />, <SiTailwindcss />],
-      github: '#',
+      github: 'https://github.com/Amani-Ishimwe/BlogSphere_Frontend_ReactJs.git',
+      live: '#',
+      featured: false
+    },
+    {
+      id: 6,
+      title: 'Citizen Engagement Platform',
+      description: 'A platform for citizens to engage with their local government and access public services.',
+      image: '/api/placeholder/400/250',
+      category: 'fullstack',
+      technologies: ['React','Tailwind CSS'],
+      icons: [<FaReact />, <SiTailwindcss />, <FaNodeJs />, <SiMongodb />],
+      github: 'https://github.com/Amani-Ishimwe/CitizenEngagement.git',
       live: '#',
       featured: false
     }
+
   ]
 
   const filteredProjects = activeFilter === 'all' 
