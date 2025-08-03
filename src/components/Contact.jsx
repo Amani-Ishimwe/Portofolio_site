@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -36,7 +36,8 @@ const Contact = () => {
   const socialLinks = [
     { icon: <FaGithub />, href: '#', label: 'GitHub' },
     { icon: <FaLinkedin />, href: '#', label: 'LinkedIn' },
-    { icon: <FaTwitter />, href: '#', label: 'Twitter' }
+    { icon: <FaTwitter />, href: '#', label: 'Twitter' },
+    { icon: <FaInstagram />, href: '#', label: 'Instagram' }
   ]
 
   const validateForm = () => {

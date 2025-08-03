@@ -4,54 +4,14 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      title: 'Senior Full-Stack Developer',
-      company: 'TechCorp Solutions',
-      period: '2023 - Present',
+      title: 'UI/UX Designer',
+      company: 'Personal Project: Menya Bot',
+      period: '2025 - Present',
       location: 'Remote',
-      description: 'Leading development of enterprise-level applications using React, Node.js, and cloud technologies. Mentoring junior developers and implementing best practices.',
+      description: 'An AI chatbot designed to assist users with knowing what is going on with their body',
       technologies: ['React', 'Node.js', 'AWS', 'Docker', 'MongoDB'],
       type: 'Full-time'
     },
-    {
-      id: 2,
-      title: 'Blockchain Developer',
-      company: 'DeFi Innovations',
-      period: '2022 - 2023',
-      location: 'San Francisco, CA',
-      description: 'Developed smart contracts and DeFi protocols using Solidity and Web3.js. Built decentralized applications for yield farming and liquidity pools.',
-      technologies: ['Solidity', 'Web3.js', 'Ethereum', 'React', 'Hardhat'],
-      type: 'Contract'
-    },
-    {
-      id: 3,
-      title: 'AI/ML Engineer',
-      company: 'DataTech Labs',
-      period: '2021 - 2022',
-      location: 'New York, NY',
-      description: 'Built machine learning models for predictive analytics and natural language processing. Implemented AI solutions for customer service automation.',
-      technologies: ['Python', 'TensorFlow', 'PyTorch', 'FastAPI', 'Docker'],
-      type: 'Full-time'
-    },
-    {
-      id: 4,
-      title: 'Frontend Developer',
-      company: 'WebSolutions Inc',
-      period: '2020 - 2021',
-      location: 'Austin, TX',
-      description: 'Developed responsive web applications using React and modern JavaScript. Collaborated with design teams to implement pixel-perfect UI/UX.',
-      technologies: ['React', 'TypeScript', 'CSS3', 'Git', 'Figma'],
-      type: 'Full-time'
-    },
-    {
-      id: 5,
-      title: 'Backend Developer',
-      company: 'StartupXYZ',
-      period: '2019 - 2020',
-      location: 'Seattle, WA',
-      description: 'Built RESTful APIs and microservices using Node.js and Express. Implemented database solutions and authentication systems.',
-      technologies: ['Node.js', 'Express', 'PostgreSQL', 'Redis', 'JWT'],
-      type: 'Full-time'
-    }
   ]
 
   return (

@@ -16,21 +16,6 @@ const About = () => {
       icon: <FaPalette />,
       title: 'UI/UX Design',
       description: 'Designing intuitive and beautiful user experiences with Figma, Adobe XD, and modern design principles.'
-    },
-    {
-      icon: <FaBrain />,
-      title: 'AI Engineering',
-      description: 'Developing machine learning models and AI solutions using Python, TensorFlow, and PyTorch.'
-    },
-    {
-      icon: <FaLink />,
-      title: 'Blockchain Development',
-      description: 'Building decentralized applications and smart contracts using Solidity and Web3 technologies.'
-    },
-    {
-      icon: <FaDatabase />,
-      title: 'Database Development',
-      description: 'Designing and optimizing database systems with SQL, NoSQL, and cloud database solutions.'
     }
   ]
 
@@ -52,9 +37,8 @@ const About = () => {
           </h3>
           
           <p className="text-lg text-dark-300 leading-relaxed">
-            I'm a passionate full-stack developer with expertise spanning from frontend development to blockchain technology. 
-            With over 5 years of experience in the tech industry, I've worked on diverse projects that have shaped my 
-            understanding of modern software development.
+            I’m a dedicated developer with hands-on experience in both backend and frontend development, as well as UI/UX design. 
+            Driven by curiosity and a passion for learning, I’m continually expanding my skills and embracing new challenges to grow.
           </p>
           
           <p className="text-lg text-dark-300 leading-relaxed">
@@ -66,17 +50,17 @@ const About = () => {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-6 pt-8">
             <div className="text-center">
-              <div className="text-3xl font-bold gradient-text mb-2">50+</div>
+              <div className="text-3xl font-bold gradient-text mb-2">5+</div>
               <div className="text-dark-300">Projects Completed</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold gradient-text mb-2">5+</div>
+              <div className="text-3xl font-bold gradient-text mb-2">1+</div>
               <div className="text-dark-300">Years Experience</div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold gradient-text mb-2">30+</div>
+            {/*<div className="text-center">
+              <div className="text-3xl font-bold gradient-text mb-2">1+</div>
               <div className="text-dark-300">Happy Clients</div>
-            </div>
+            </div>*/}
           </div>
         </div>
 
