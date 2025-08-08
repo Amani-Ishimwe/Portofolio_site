@@ -71,7 +71,7 @@ const projects = [
       technologies: ['React','Tailwind CSS'],
       icons: [<FaReact />, <SiTailwindcss />],
       github: 'https://github.com/Amani-Ishimwe/BlogSphere_Frontend_ReactJs.git',
-      live: '#',
+      live: 'https://elegant-marigold-f955c0.netlify.app/',
       featured: false
     },
     {
