@@ -270,6 +270,9 @@ const Contact = () => {
             </div>
 
             <button
+              action="mailto:amanisamuel10@gmail.com" 
+              method="POST" 
+              encType="text/plain"
               type="submit"
               disabled={isSubmitting}
               className="w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
