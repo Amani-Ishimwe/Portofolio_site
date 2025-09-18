@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import Logo from '../../public/logo.svg'
 
 const Header = ({ activeSection, onNavClick }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -29,10 +30,11 @@ const Header = ({ activeSection, onNavClick }) => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-primary-500 to-primary-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">AS</span>
-            </div>
-            <span className="text-xl font-bold gradient-text">Amani Samuel</span>
+            <img 
+              src={Logo} 
+              alt="Amani Logo" 
+              className="w-10 h-10"
+            />
           </div>
 
           {/* Desktop Navigation */}
@@ -102,4 +104,4 @@ const Header = ({ activeSection, onNavClick }) => {
   )
 }
 
-export default Header 
+export default Header

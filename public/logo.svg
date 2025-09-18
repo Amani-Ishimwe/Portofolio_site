@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo A">
+  <defs>
+    <!-- Orange gradient -->
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#FF8A3C"/>
+      <stop offset="50%" stop-color="#F97316"/>
+      <stop offset="100%" stop-color="#C84A00"/>
+    </linearGradient>
+
+    <!-- Soft highlight -->
+    <linearGradient id="g2" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.0"/>
+    </linearGradient>
+
+    <!-- Drop shadow filter -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="20" stdDeviation="30" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+
+    <!-- Inner emboss to give realistic feel -->
+    <filter id="emboss" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8" result="blur"/>
+      <feOffset in="blur" dx="0" dy="4" result="off"/>
+      <feComposite in="off" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="emboss"/>
+      <feMerge>
+        <feMergeNode in="emboss"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- subtle circular background accent (transparent) -->
+  <rect width="100%" height="100%" fill="none"/>
+
+  <!-- Orange base shape behind the 'A' for a strong brand presence -->
+  <g transform="translate(512,512)">
+    <ellipse rx="360" ry="360" fill="url(#g1)" opacity="0.12" />
+  </g>
+
+  <!-- The stylized 'A' made from two legs and a crossbar -->
+  <g transform="translate(0,0)" filter="url(#shadow)">
+    <!-- Left leg (orange) -->
+    <path d="M220 820 L360 260 L460 260 L320 820 Z" fill="url(#g1)"/>
+    <!-- Right leg (orange) -->
+    <path d="M804 820 L664 260 L564 260 L704 820 Z" fill="url(#g1)"/>
+    <!-- Inner white core to form the main 'A' silhouette (creates clean white A) -->
+    <path d="M320 760 L420 360 L604 360 L704 760 L640 760 L520 420 L404 760 Z" fill="#FFFFFF" />
+    <!-- Crossbar (orange) slightly inset for a modern look -->
+    <path d="M440 520 L584 520 L560 580 L462 580 Z" fill="url(#g1)" />
+    <!-- Top cap to make the 'A' neat -->
+    <polygon points="420,260 604,260 512,360" fill="url(#g1)" />
+  </g>
+
+  <!-- White highlight overlay to add realism -->
+  <g opacity="0.8" filter="url(#emboss)">
+    <path d="M320 760 L420 360 L604 360 L704 760 L640 760 L520 420 L404 760 Z" fill="url(#g2)" opacity="0.45"/>
+  </g>
+
+  <!-- Small orange accent curve to add uniqueness -->
+  <g>
+    <path d="M580 700 C640 660, 700 640, 740 620" stroke="#F97316" stroke-width="14" stroke-linecap="round" fill="none" opacity="0.95"/>
+  </g>
+</svg>
