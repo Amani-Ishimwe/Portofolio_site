@@ -61,8 +61,7 @@ const Hero = () => {
             </div>
 
             <p className="text-lg md:text-xl text-dark-300 max-w-2xl mx-auto lg:mx-0">
-              Crafting digital experiences with cutting-edge technology. 
-              I bring ideas to life with code.
+             
             </p>
 
             {/* Social Links */}
