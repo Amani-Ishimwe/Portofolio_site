@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -34,10 +36,10 @@ const Contact = () => {
   ]
 
   const socialLinks = [
-    { icon: <FaGithub />, href: 'https://github.com/Amani-Ishimwe', label: 'GitHub' },
-    { icon: <FaLinkedin />, href: 'https://www.linkedin.com/in/amani-ishimwe-409825331/', label: 'LinkedIn' },
-    { icon: <FaTwitter />, href: 'https://x.com/AmaniIsh2', label: 'Twitter' },
-    { icon: <FaInstagram />, href: 'https://www.instagram.com/amani_ishimwe10/', label: 'Instagram' }
+    { icon: <FaGithub />, href: 'https://github.com/Amani-Ishimwe', label: 'GitHub',target:"_blank" ,rel:"noopener noreferrer" },
+    { icon: <FaLinkedin />, href: 'https://www.linkedin.com/in/amani-ishimwe-409825331/', label: 'LinkedIn',target:"_blank" ,rel:"noopener noreferrer" },
+    { icon: <FontAwesomeIcon icon= {faXTwitter} />,href: 'https://x.com/AmaniIsh2',label: 'Twitter',target: "_blank",rel: "noopener noreferrer"}, 
+    { icon: <FaInstagram />, href: 'https://www.instagram.com/amani_ishimwe008/', label: 'Instagram',target:"_blank" ,rel:"noopener noreferrer" }
   ]
 
   const validateForm = () => {
@@ -158,6 +160,8 @@ const Contact = () => {
                 <a
                   key={index}
                   href={social.href}
+                  target={social.target}
+                  rel={social.rel}
                   className="w-12 h-12 bg-dark-800 hover:bg-primary-500 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
                   aria-label={social.label}
                 >

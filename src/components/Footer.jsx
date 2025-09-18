@@ -1,4 +1,6 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope, FaPhone, FaInstagram } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaInstagram } from 'react-icons/fa'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -13,10 +15,10 @@ const Footer = () => {
   ]
 
   const socialLinks = [
-    { icon: <FaGithub />, href: 'https://github.com/Amani-Ishimwe', label: 'GitHub' },
-    { icon: <FaLinkedin />, href: 'https://www.linkedin.com/in/amani-ishimwe-409825331/', label: 'LinkedIn' },
-    { icon: <FaTwitter />, href: 'https://x.com/AmaniIsh2', label: 'Twitter' },
-    { icon: <FaInstagram />, href: 'https://www.instagram.com/amani_ishimwe10/', label: 'Instagram' }
+    { icon: <FaGithub />, href: 'https://github.com/Amani-Ishimwe', label: 'GitHub', target: '_blank', rel: 'noopener noreferrer' },
+    { icon: <FaLinkedin />, href: 'https://www.linkedin.com/in/amani-ishimwe-409825331/', label: 'LinkedIn', target: '_blank', rel: 'noopener noreferrer' },
+    { icon: <FontAwesomeIcon icon={faXTwitter} />, href: 'https://x.com/AmaniIsh2', label: 'Twitter', target: '_blank', rel: 'noopener noreferrer' },
+    { icon: <FaInstagram />, href: 'https://www.instagram.com/amani_ishimwe008/', label: 'Instagram', target: '_blank', rel: 'noopener noreferrer' },
   ]
 
   const scrollToSection = (sectionId) => {
@@ -40,27 +42,19 @@ const Footer = () => {
             </div>
             
             <p className="text-dark-300 leading-relaxed mb-6 max-w-md">
-              A passionate full-stack developer specializing in modern web technologies, 
-              blockchain development, and AI/ML solutions. Let's build something amazing together!
+              A passionate full-stack developer specializing in modern web technologies. Let's build something amazing together!
             </p>
 
-            {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <FaEnvelope className="text-primary-400" />
-                <a 
-                  href="mailto:amanisamuel10@gmail.com" 
-                  className="text-dark-300 hover:text-white transition-colors"
-                >
+                <a href="mailto:amanisamuel10@gmail.com" className="text-dark-300 hover:text-white transition-colors">
                   amanisamuel10@gmail.com
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <FaPhone className="text-primary-400" />
-                <a 
-                  href="tel:+250791515013" 
-                  className="text-dark-300 hover:text-white transition-colors"
-                >
+                <a href="tel:+250791515013" className="text-dark-300 hover:text-white transition-colors">
                   +250 791 515 013
                 </a>
               </div>
@@ -84,7 +78,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Social Links */}
+          {/* Social & Newsletter */}
           <div>
             <h3 className="text-lg font-semibold text-white mb-6">Connect</h3>
             <div className="flex space-x-4">
@@ -92,6 +86,8 @@ const Footer = () => {
                 <a
                   key={index}
                   href={social.href}
+                  target={social.target}
+                  rel={social.rel}
                   className="w-12 h-12 bg-dark-800 hover:bg-primary-500 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
                   aria-label={social.label}
                 >
@@ -100,18 +96,24 @@ const Footer = () => {
               ))}
             </div>
 
-            {/* Newsletter Signup */}
             <div className="mt-8">
               <h4 className="text-white font-medium mb-4">Stay Updated</h4>
-              <div className="flex">
-                <input
-                  type="email"
-                  placeholder="Your email"
-                  className="flex-1 px-4 py-2 bg-dark-800 border border-dark-700 rounded-l-lg focus:outline-none focus:border-primary-500 text-white placeholder-dark-400"
-                />
-                <button className="px-4 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-r-lg transition-colors">
-                  Subscribe
-                </button>
+              <div className="flex justify-center md:justify-start">
+                <div className="flex w-full max-w-xs">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    className="flex-1 px-4 py-2 bg-dark-800 border border-dark-700 
+                               rounded-l-lg focus:outline-none focus:border-primary-500 
+                               text-white placeholder-dark-400"
+                  />
+                  <button
+                    className="px-4 py-2 bg-primary-500 hover:bg-primary-600 
+                               text-white rounded-r-lg transition-colors"
+                  >
+                    Subscribe
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -125,19 +127,12 @@ const Footer = () => {
             </p>
             
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="text-dark-300 hover:text-white transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-dark-300 hover:text-white transition-colors">
-                Terms of Service
-              </a>
-              <a href="#" className="text-dark-300 hover:text-white transition-colors">
-                Cookie Policy
-              </a>
+              <a href="#" className="text-dark-300 hover:text-white transition-colors">Privacy Policy</a>
+              <a href="#" className="text-dark-300 hover:text-white transition-colors">Terms of Service</a>
+              <a href="#" className="text-dark-300 hover:text-white transition-colors">Cookie Policy</a>
             </div>
           </div>
 
-          {/* Made with love */}
           <div className="text-center mt-6">
             <p className="text-dark-400 text-sm">
               Made with ❤️ by Amani Samuel using React & Tailwind CSS
@@ -149,4 +144,4 @@ const Footer = () => {
   )
 }
 
-export default Footer 
+export default Footer

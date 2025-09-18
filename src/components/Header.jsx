@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import Logo from '../../public/logo.svg'
+
 
 const Header = ({ activeSection, onNavClick }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -31,7 +31,7 @@ const Header = ({ activeSection, onNavClick }) => {
           {/* Logo */} 
           <div className="flex items-center space-x-2">
             <img 
-              src={Logo} 
+              src="/logo.svg" 
               alt="Amani Logo" 
               className="w-10 h-10"
             />
@@ -58,7 +58,7 @@ const Header = ({ activeSection, onNavClick }) => {
           <div className="hidden md:block">
             <button 
               onClick={() => handleNavClick('contact')}
-              className="btn-primary"
+              className="btn-primary rounded-full"
             >
               Hire Me
             </button>

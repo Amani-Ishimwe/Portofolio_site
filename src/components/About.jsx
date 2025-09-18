@@ -36,16 +36,14 @@ const About = () => {
             <span className="gradient-text">Digital Reality</span>
           </h3>
           
-          <p className="text-lg text-dark-300 leading-relaxed">
-            I’m a dedicated developer with hands-on experience in both backend and frontend development, as well as UI/UX design. 
-            Driven by curiosity and a passion for learning, I’m continually expanding my skills and embracing new challenges to grow.
+          <p className="text-lg text-dark-300 lead-relaxed">
+            I’m a developer experienced in frontend, backend, and UI/UX design. Curious and eager to learn, I embrace new challenges to grow my skills.
           </p>
-          
+
           <p className="text-lg text-dark-300 leading-relaxed">
-            My journey in technology started with a curiosity about how things work on the web, which evolved into a 
-            deep passion for creating innovative solutions. I believe in writing clean, maintainable code and staying 
-            up-to-date with the latest technologies and best practices.
+             My tech journey began with curiosity about the web and grew into a passion for building clean, maintainable solutions while keeping up with the latest technologies.
           </p>
+
 
           {/* Stats */}
           <div className="grid grid-cols-3 gap-6 pt-8">

@@ -8,11 +8,20 @@ const Testimonials = () => {
     {
       id: 1,
       name: 'Muhire Moise',
-      position: 'Software Tester, Umbrella Tech',
-      company: 'Umbrella Tech',
+      position: 'Software Tester ',
+      company: 'Test Solutions',
       rating: 5,
-      text: 'Amani Samuel is an exceptional developer who delivered our project on time and with high quality. His attention to detail and problem-solving skills are impressive.',
+      text: 'Amani Samuel is an exceptional developer who delivered my project on time and with high quality. His attention to detail and problem-solving skills are impressive.',
       avatar: 'MM'
+    },
+     {
+      id: 2,
+      name: 'Bahati Samuel',
+      position: 'Senior Cyber Assistant',
+      company: 'Africa CyberSecurity Consortium',
+      rating: 5,
+      text: '"Amani Ishimwe is a talented designer who consistently delivers high-quality work on schedule. His creativity, technical expertise, and commitment to excellence make him a valuable asset to any project."',
+      avatar: 'BS'
     }
   ]
 

@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons'
 
 const Hero = () => {
   const roles = [
@@ -68,24 +70,33 @@ const Hero = () => {
             <div className="flex justify-center lg:justify-start space-x-4">
               <a 
                 href="https://github.com/Amani-Ishimwe" 
+                target="_blank" 
+                rel="noopener noreferrer"
                 className="w-12 h-12 bg-dark-800 hover:bg-primary-500 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
               >
                 <FaGithub className="text-white" />
               </a>
               <a 
-                href="https://www.linkedin.com/in/amani-ishimwe-409825331/" 
+                href="https://www.linkedin.com/in/amani-ishimwe-409825331/"
+                target="_blank" 
+                rel="noopener noreferrer" 
                 className="w-12 h-12 bg-dark-800 hover:bg-primary-500 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
               >
                 <FaLinkedin className="text-white" />
               </a>
-              <a 
-                href="https://x.com/AmaniIsh2" 
-                className="w-12 h-12 bg-dark-800 hover:bg-primary-500 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
-              >
-                <FaTwitter className="text-white" />
+                <a 
+                  href="https://x.com/AmaniIsh2" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-dark-800 hover:bg-primary-500 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+                  style={{  color: 'white' }}
+                >
+                  <FontAwesomeIcon icon={faXTwitter} />
               </a>
               <a 
-                href="https://www.instagram.com/amani_ishimwe10/" 
+                href="https://www.instagram.com/amani_ishimwe008/"
+                target="_blank" 
+                rel="noopener noreferrer" 
                 className="w-12 h-12 bg-dark-800 hover:bg-primary-500 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
               >
                 <FaInstagram className="text-white" />
