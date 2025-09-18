@@ -20,7 +20,7 @@ const Testimonials = () => {
       position: 'Senior Cyber Assistant',
       company: 'Africa CyberSecurity Consortium',
       rating: 5,
-      text: '"Amani Ishimwe is a talented designer who consistently delivers high-quality work on schedule. His creativity, technical expertise, and commitment to excellence make him a valuable asset to any project."',
+      text: "Amani Ishimwe is a talented designer who consistently delivers high-quality work on schedule. His creativity, technical expertise, and commitment to excellence make him a valuable asset to any project.",
       avatar: 'BS'
     }
   ]
@@ -52,7 +52,7 @@ const Testimonials = () => {
             <FaQuoteLeft size={48} />
           </div>
 
-          <div className="relative z-10">
+          <div className="relative">
             {/* Rating */}
             <div className="flex justify-center mb-6">
               {[...Array(currentTestimonial.rating)].map((_, index) => (
