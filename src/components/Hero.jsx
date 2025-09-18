@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { FaGithub, FaLinkedin, FaTwitter, FaDownload, FaInstagram } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa'
 
 const Hero = () => {
   const [currentRole, setCurrentRole] = useState(0)
@@ -44,7 +44,6 @@ const Hero = () => {
               I bring ideas to life with code.
             </p>
 
-
             {/* Social Links */}
             <div className="flex justify-center lg:justify-start space-x-4">
               <a 
@@ -74,38 +73,14 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Content - Animated Elements */}
-          <div className="relative">
-            <div className="relative w-80 h-80 mx-auto">
-              {/* Main Circle */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-primary-600 rounded-full animate-pulse-slow opacity-20"></div>
-              
-              {/* Floating Elements */}
-              <div className="absolute top-10 left-10 w-16 h-16 bg-dark-800 rounded-lg flex items-center justify-center animate-bounce-slow">
-                <span className="text-primary-400 font-mono text-sm">NestJs</span>
-              </div>
-              
-              <div className="absolute top-20 right-10 w-16 h-16 bg-dark-800 rounded-lg flex items-center justify-center animate-bounce-slow" style={{animationDelay: '0.5s'}}>
-                <span className="text-primary-400 font-mono text-sm">Node.js</span>
-              </div>
-              
-              <div className="absolute bottom-20 left-10 w-16 h-16 bg-dark-800 rounded-lg flex items-center justify-center animate-bounce-slow" style={{animationDelay: '1s'}}>
-                <span className="text-primary-400 font-mono text-sm">AI/ML</span>
-              </div>
-              
-              <div className="absolute bottom-10 right-20 w-16 h-16 bg-dark-800 rounded-lg flex items-center justify-center animate-bounce-slow" style={{animationDelay: '1.5s'}}>
-                <span className="text-primary-400 font-mono text-sm">Blockchain</span>
-              </div>
-              
-              {/* Center Profile Placeholder */}
-              <div className="absolute inset-8 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-24 h-24 bg-white rounded-full flex items-center justify-center mb-4">
-                    <span className="text-2xl font-bold text-primary-600">AS</span>
-                  </div>
-                  <p className="text-white font-semibold">Amani Samuel</p>
-                </div>
-              </div>
+          {/* Right Content - Photo */}
+          <div className="flex justify-center lg:justify-end">
+            <div className="w-80 h-80 rounded-full overflow-hidden shadow-2xl border-4 border-primary-500">
+              <img 
+                src="/Copy.jpg" 
+                alt="Amani Samuel" 
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -114,4 +89,4 @@ const Hero = () => {
   )
 }
 
-export default Hero 
+export default Hero
