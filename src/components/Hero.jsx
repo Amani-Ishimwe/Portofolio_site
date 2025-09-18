@@ -2,19 +2,39 @@ import { useState, useEffect } from 'react'
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa'
 
 const Hero = () => {
-  const [currentRole, setCurrentRole] = useState(0)
   const roles = [
-    'Frontend Developer',
-    'Backend Developer', 
-    'UI/UX Designer'
+    'FRONTEND DEVELOPER',
+    'BACKEND DEVELOPER',
+    'UI/UX DESIGNER'
   ]
 
+  const [text, setText] = useState('')
+  const [roleIndex, setRoleIndex] = useState(0)
+  const [charIndex, setCharIndex] = useState(0)
+  const [isDeleting, setIsDeleting] = useState(false)
+
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentRole((prev) => (prev + 1) % roles.length)
-    }, 2000)
-    return () => clearInterval(interval)
-  }, [roles.length])
+    const currentRole = roles[roleIndex]
+    let typingSpeed = isDeleting ? 80 : 120
+
+    const timeout = setTimeout(() => {
+      if (!isDeleting && charIndex < currentRole.length) {
+        setText(currentRole.substring(0, charIndex + 1))
+        setCharIndex(charIndex + 1)
+      } else if (isDeleting && charIndex > 0) {
+        setText(currentRole.substring(0, charIndex - 1))
+        setCharIndex(charIndex - 1)
+      } else if (!isDeleting && charIndex === currentRole.length) {
+        // Pause before deleting
+        setTimeout(() => setIsDeleting(true), 1000)
+      } else if (isDeleting && charIndex === 0) {
+        setIsDeleting(false)
+        setRoleIndex((roleIndex + 1) % roles.length)
+      }
+    }, typingSpeed)
+
+    return () => clearTimeout(timeout)
+  }, [charIndex, isDeleting, roleIndex, roles])
 
   return (
     <section className="min-h-screen flex items-center justify-center pt-16">
@@ -28,12 +48,13 @@ const Hero = () => {
                 <br />
                 <span className="gradient-text">AMANI SAMUEL</span>
               </h1>
-              
+
               <div className="h-16 flex items-center justify-center lg:justify-start">
                 <span className="text-xl md:text-2xl text-dark-300">
                   I'm a{' '}
-                  <span className="gradient-text font-semibold animate-pulse">
-                    {roles[currentRole]}
+                  <span className="gradient-text font-semibold">
+                    {text}
+                    <span className="animate-pulse">|</span>
                   </span>
                 </span>
               </div>

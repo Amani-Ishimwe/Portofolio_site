@@ -1,4 +1,4 @@
-import { FaCode, FaPalette, FaBrain, FaLink, FaDatabase, FaServer } from 'react-icons/fa'
+import { FaCode, FaPalette, FaServer } from 'react-icons/fa'
 
 const About = () => {
   const expertise = [
@@ -57,26 +57,17 @@ const About = () => {
               <div className="text-3xl font-bold gradient-text mb-2">1+</div>
               <div className="text-dark-300">Years Experience</div>
             </div>
-            {/*<div className="text-center">
-              <div className="text-3xl font-bold gradient-text mb-2">1+</div>
-              <div className="text-dark-300">Happy Clients</div>
-            </div>*/}
           </div>
         </div>
 
-        {/* Right Content - Image/Visual */}
+        {/* Right Content - Your Photo */}
         <div className="relative">
-          <div className="relative w-full h-96 bg-gradient-to-br from-primary-500/20 to-primary-600/20 rounded-2xl overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-dark-800/50 to-dark-900/50"></div>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-32 h-32 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center mb-6 mx-auto">
-                  <span className="text-4xl font-bold text-white">AS</span>
-                </div>
-                <h4 className="text-xl font-semibold text-white mb-2">Amani Samuel</h4>
-                <p className="text-dark-300">Full-Stack Developer</p>
-              </div>
-            </div>
+          <div className="relative w-full h-96 rounded-2xl overflow-hidden shadow-lg">
+            <img 
+              src="mockup.png" 
+              alt="Amani Samuel" 
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>
@@ -99,4 +90,4 @@ const About = () => {
   )
 }
 
-export default About 
+export default About
