@@ -17,6 +17,9 @@ importers:
       '@fortawesome/react-fontawesome':
         specifier: ^3.0.2
         version: 3.0.2(@fortawesome/fontawesome-svg-core@7.0.1)(react@19.1.1)
+      emailjs-com:
+        specifier: ^3.2.0
+        version: 3.2.0
       react:
         specifier: ^19.1.0
         version: 19.1.1
@@ -704,6 +707,11 @@ packages:
 
   electron-to-chromium@1.5.194:
     resolution: {integrity: sha512-SdnWJwSUot04UR51I2oPD8kuP2VI37/CADR1OHsFOUzZIvfWJBO6q11k5P/uKNyTT3cdOsnyjkrZ+DDShqYqJA==}
+
+  emailjs-com@3.2.0:
+    resolution: {integrity: sha512-Prbz3E1usiAwGjMNYRv6EsJ5c373cX7/AGnZQwOfrpNJrygQJ15+E9OOq4pU8yC977Z5xMetRfc3WmDX6RcjAA==}
+    engines: {node: '>=12.0.0'}
+    deprecated: The SDK name changed to @emailjs/browser
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -1946,6 +1954,8 @@ snapshots:
   eastasianwidth@0.2.0: {}
 
   electron-to-chromium@1.5.194: {}
+
+  emailjs-com@3.2.0: {}
 
   emoji-regex@8.0.0: {}
 

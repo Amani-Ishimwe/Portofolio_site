@@ -34,7 +34,7 @@ export default {
         }
       },
       fontFamily: {
-        'sans': ['Poppins', 'sans-serif'],
+        'sans': ['Jost', 'sans-serif'],
         'mono': ['JetBrains Mono', 'monospace'],
       },
       animation: {
