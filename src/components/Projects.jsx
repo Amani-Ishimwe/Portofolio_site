@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { FaGithub, FaExternalLinkAlt, FaReact, FaNodeJs,FaPaintBrush, FaHtml5, FaCss3 } from 'react-icons/fa'
-import { SiTypescript, SiMongodb,SiPostgresql,SiTailwindcss } from 'react-icons/si'
+import { FaGithub, FaExternalLinkAlt, FaReact, FaNodeJs, FaPaintBrush, FaHtml5, FaCss3 } from 'react-icons/fa'
+import { SiTypescript, SiMongodb, SiPostgresql, SiTailwindcss } from 'react-icons/si'
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all')
@@ -13,12 +13,12 @@ const Projects = () => {
     { id: 'ui/ux', label: 'UI/UX Design' }
   ]
 
-const projects = [
+  const projects = [
     {
       id: 1,
       title: 'Blog Management Api',
-      description: 'A modern blog management API built with  Node.js,Expressjs and MongoDB. Features include user authentication, post creation, and comment management.',
-      image: '/api/placeholder/400/250',
+      description: 'A modern blog management API built with Node.js, Expressjs and MongoDB. Features include user authentication, post creation, and comment management.',
+      image: '/nodejs.jpg',
       category: 'backend',
       technologies: [ 'Node.js', 'MongoDB', 'Express.js', 'JWT'],
       icons: [ <FaNodeJs />, <SiMongodb />],
@@ -30,7 +30,7 @@ const projects = [
       id: 2,
       title: 'Visitor Management System',
       description: 'A system for managing visitor check-ins',
-      image: '/api/placeholder/400/250',
+      image: '/nestjs.jpg',
       category: 'backend',
       technologies: ['NestJs', 'Postgresql', 'PrismaORM'],
       icons: [<FaNodeJs />, <SiPostgresql />],
@@ -42,7 +42,7 @@ const projects = [
       id: 3,
       title: 'Menya Bot',
       description: 'An intelligent chatbot powered by machine learning algorithms for customer support and automated responses.',
-      image: '/api/placeholder/400/250',
+      image: '/menya.png',
       category: 'ui/ux',
       technologies: ['Figma'],
       icons: [<FaPaintBrush />],
@@ -54,7 +54,7 @@ const projects = [
       id: 4,
       title: 'Task Management App',
       description: 'A collaborative task management application with real-time updates, team collaboration, and progress tracking.',
-      image: '/api/placeholder/400/250',
+      image: '/nestjs.jpg',
       category: 'backend',
       technologies: ['Nestjs', 'PrismaORM', 'Postgresql'],
       icons: [<FaNodeJs />, <SiTypescript />, <SiPostgresql />],
@@ -66,7 +66,7 @@ const projects = [
       id: 5,
       title: 'Blog and Magazine',
       description: 'A platform for writers and readers to share and discover articles on various topics.',
-      image: '/api/placeholder/400/250',
+      image: '/reactjsx.jpg',
       category: 'frontend',
       technologies: ['React','Tailwind CSS'],
       icons: [<FaReact />, <SiTailwindcss />],
@@ -78,9 +78,9 @@ const projects = [
       id: 6,
       title: 'Citizen Engagement Platform',
       description: 'A platform for citizens to engage with their local government and access public services.',
-      image: '/api/placeholder/400/250',
+      image: '/mern.jpg',
       category: 'fullstack',
-      technologies: ['React','Tailwind CSS'],
+      technologies: ['React','Tailwind CSS','Nodejs', 'Express','MongoDB'],
       icons: [<FaReact />, <SiTailwindcss />, <FaNodeJs />, <SiMongodb />],
       github: 'https://github.com/Amani-Ishimwe/CitizenEngagement.git',
       live: '#',
@@ -89,8 +89,8 @@ const projects = [
     {
       id: 7,
       title: 'University Landing Page',
-      description: 'A full-featured e-commerce platform with product management, shopping cart, and payment integration.',
-      image: '/api/placeholder/400/250',
+      description: 'A landing page that shows details about the campus such as activities, adm',
+      image: '/html.jpg',
       category: 'frontend',
       technologies: ['React', 'Node.js', 'MongoDB'],
       icons: [<FaHtml5 />, <FaCss3 />],
@@ -102,7 +102,7 @@ const projects = [
       id: 8,
       title: 'Portfolio Website',   
       description: 'A personal portfolio website showcasing my projects, skills, and experience.',
-      image: '/api/placeholder/400/250',
+      image: '/reactjsx.jpg',
       category: 'frontend',
       technologies: ['React', 'Tailwind CSS'],
       icons: [<FaReact />, <SiTailwindcss />],
@@ -151,32 +151,26 @@ const projects = [
           >
             {/* Project Image */}
             <div className="relative mb-6 overflow-hidden rounded-lg">
-              <div className="w-full h-48 bg-gradient-to-br from-primary-500/20 to-primary-600/20 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-primary-500/20 rounded-lg flex items-center justify-center mb-4 mx-auto">
-                    <span className="text-2xl text-primary-400">{project.icons[0]}</span>
-                  </div>
-                  <h4 className="text-lg font-semibold text-white">{project.title}</h4>
-                </div>
-              </div>
-              
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-48 object-cover"
+              />
               {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-dark-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                <div className="p-4 w-full">
-                  <div className="flex gap-2">
-                    <a 
-                      href={project.github}
-                      className="w-10 h-10 bg-dark-800 hover:bg-primary-500 rounded-full flex items-center justify-center transition-all duration-300"
-                    >
-                      <FaGithub className="text-white" />
-                    </a>
-                    <a 
-                      href={project.live}
-                      className="w-10 h-10 bg-dark-800 hover:bg-primary-500 rounded-full flex items-center justify-center transition-all duration-300"
-                    >
-                      <FaExternalLinkAlt className="text-white" />
-                    </a>
-                  </div>
+                <div className="p-4 w-full flex gap-2">
+                  <a 
+                    href={project.github}
+                    className="w-10 h-10 bg-dark-800 hover:bg-primary-500 rounded-full flex items-center justify-center transition-all duration-300"
+                  >
+                    <FaGithub className="text-white" />
+                  </a>
+                  <a 
+                    href={project.live}
+                    className="w-10 h-10 bg-dark-800 hover:bg-primary-500 rounded-full flex items-center justify-center transition-all duration-300"
+                  >
+                    <FaExternalLinkAlt className="text-white" />
+                  </a>
                 </div>
               </div>
             </div>
@@ -186,7 +180,6 @@ const projects = [
               <h3 className="text-xl font-semibold text-white group-hover:text-primary-400 transition-colors">
                 {project.title}
               </h3>
-              
               <p className="text-dark-300 leading-relaxed">
                 {project.description}
               </p>
@@ -227,4 +220,4 @@ const projects = [
   )
 }
 
-export default Projects 
+export default Projects
