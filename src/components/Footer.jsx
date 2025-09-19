@@ -1,9 +1,9 @@
-import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaInstagram } from 'react-icons/fa'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faXTwitter } from '@fortawesome/free-brands-svg-icons'
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaInstagram } from 'react-icons/fa';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   const quickLinks = [
     { name: 'Home', href: '#home' },
@@ -12,35 +12,36 @@ const Footer = () => {
     { name: 'Projects', href: '#projects' },
     { name: 'Experience', href: '#experience' },
     { name: 'Contact', href: '#contact' }
-  ]
+  ];
 
   const socialLinks = [
     { icon: <FaGithub />, href: 'https://github.com/Amani-Ishimwe', label: 'GitHub', target: '_blank', rel: 'noopener noreferrer' },
     { icon: <FaLinkedin />, href: 'https://www.linkedin.com/in/amani-ishimwe-409825331/', label: 'LinkedIn', target: '_blank', rel: 'noopener noreferrer' },
     { icon: <FontAwesomeIcon icon={faXTwitter} />, href: 'https://x.com/AmaniIsh2', label: 'Twitter', target: '_blank', rel: 'noopener noreferrer' },
-    { icon: <FaInstagram />, href: 'https://www.instagram.com/amani_ishimwe008/', label: 'Instagram', target: '_blank', rel: 'noopener noreferrer' },
-  ]
+    { icon: <FaInstagram />, href: 'https://www.instagram.com/amani_ishimwe008/', label: 'Instagram', target: '_blank', rel: 'noopener noreferrer' }
+  ];
 
   const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId.replace('#', ''))
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
+    const element = document.getElementById(sectionId.replace('#', ''));
+    if (element) element.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <footer className="bg-dark-900/50 border-t border-dark-800/50">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-r from-primary-500 to-primary-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">AS</span>
-              </div>
+              <img
+                src="/logo.svg"
+                alt="Amani Samuel Logo"
+                className="w-10 h-10 rounded-lg object-contain"
+              />
               <span className="text-2xl font-bold gradient-text">Amani Samuel</span>
             </div>
-            
+
             <p className="text-dark-300 leading-relaxed mb-6 max-w-md">
               A passionate full-stack developer specializing in modern web technologies. Let's build something amazing together!
             </p>
@@ -103,14 +104,9 @@ const Footer = () => {
                   <input
                     type="email"
                     placeholder="Your email"
-                    className="flex-1 px-4 py-2 bg-dark-800 border border-dark-700 
-                               rounded-l-lg focus:outline-none focus:border-primary-500 
-                               text-white placeholder-dark-400"
+                    className="flex-1 px-4 py-2 bg-dark-800 border border-dark-700 rounded-l-lg focus:outline-none focus:border-primary-500 text-white placeholder-dark-400"
                   />
-                  <button
-                    className="px-4 py-2 bg-primary-500 hover:bg-primary-600 
-                               text-white rounded-r-lg transition-colors"
-                  >
+                  <button className="px-4 py-2 bg-primary-500 hover:bg-primary-600 text-white rounded-r-lg transition-colors">
                     Subscribe
                   </button>
                 </div>
@@ -125,7 +121,6 @@ const Footer = () => {
             <p className="text-dark-300 text-sm">
               © {currentYear} Amani Samuel Ishimwe. All rights reserved.
             </p>
-            
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-dark-300 hover:text-white transition-colors">Privacy Policy</a>
               <a href="#" className="text-dark-300 hover:text-white transition-colors">Terms of Service</a>
@@ -141,7 +136,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

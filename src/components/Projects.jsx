@@ -35,7 +35,7 @@ const Projects = () => {
       technologies: ['NestJs', 'Postgresql', 'PrismaORM'],
       icons: [<FaNodeJs />, <SiPostgresql />],
       github: 'https://github.com/Amani-Ishimwe/Visitor_Management_System-NestJs.git',
-      live: '#',
+      live: 'https://visitormanagementsystem-nestjs-production.up.railway.app/api/docs',
       featured: true
     },
     {
