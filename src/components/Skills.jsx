@@ -18,7 +18,7 @@ const Skills = () => {
 
   const skills = [
     // Frontend
-    { name: 'React', icon: <FaReact />, category: 'frontend', level: 50, color: '#61DAFB' },
+    { name: 'React', icon: <FaReact />, category: 'frontend', level: 85, color: '#61DAFB' },
     { name: 'TypeScript', icon: <SiTypescript />, category: 'frontend', level: 90, color: '#3178C6' },
     { name: 'JavaScript', icon: <FaJs />, category: 'frontend', level: 95, color: '#F7DF1E' },
     { name: 'HTML5', icon: <FaHtml5 />, category: 'frontend', level: 90, color: '#E34F26' },
