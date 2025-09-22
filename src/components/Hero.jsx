@@ -103,15 +103,6 @@ const Hero = () => {
               >
                 <FaInstagram className="text-white" />
               </a>
-              {/* <a
-              href='https://dribbble.com/amani_samuel'
-              target='_blank'
-              rel='nopener noreferrer'
-              className="w-12 h-12 bg-dark-800 hover:bg-primary-500 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
-              style={{ color: 'white' }}
-              >
-                <FontAwesomeIcon icon={faDribbble} />
-              </a> */}
             </div>
           </div>
 
