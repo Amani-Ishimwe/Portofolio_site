@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faDribbble } from '@fortawesome/free-brands-svg-icons'
 
 const Hero = () => {
   const roles = [
@@ -102,6 +103,15 @@ const Hero = () => {
               >
                 <FaInstagram className="text-white" />
               </a>
+              {/* <a
+              href='https://dribbble.com/amani_samuel'
+              target='_blank'
+              rel='nopener noreferrer'
+              className="w-12 h-12 bg-dark-800 hover:bg-primary-500 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110"
+              style={{ color: 'white' }}
+              >
+                <FontAwesomeIcon icon={faDribbble} />
+              </a> */}
             </div>
           </div>
 
@@ -109,7 +119,7 @@ const Hero = () => {
           <div className="flex justify-center lg:justify-end">
             <div className="w-72 h-[28rem] md:w-96 md:h-[32rem] overflow-hidden shadow-2xl border-1 border-primary-500 rounded-full">
               <img 
-                src="/profile1.png"   
+                src="/Copy.jpg"   
                 alt="Amani Samuel" 
                 className="w-full h-full object-cover"
               />
