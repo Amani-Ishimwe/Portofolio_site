@@ -33,7 +33,7 @@ const About = () => {
         <div className="space-y-6">
           <h3 className="text-3xl font-bold text-white mb-6">
             Transforming Ideas Into{' '}
-            <span className="gradient-text">Digital Reality</span>
+            <span className="text-primary-500">Digital Reality</span>
           </h3>
           
           <p className="text-lg text-dark-300 lead-relaxed">
@@ -48,11 +48,11 @@ const About = () => {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-6 pt-8">
             <div className="text-center">
-              <div className="text-3xl font-bold gradient-text mb-2">5+</div>
+              <div className="text-3xl font-bold text-primary-500 mb-2">5+</div>
               <div className="text-dark-300">Projects Completed</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold gradient-text mb-2">1+</div>
+              <div className="text-3xl font-bold text-primary-500 mb-2">1+</div>
               <div className="text-dark-300">Years Experience</div>
             </div>
           </div>

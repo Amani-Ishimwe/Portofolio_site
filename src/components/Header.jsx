@@ -60,7 +60,7 @@ const Header = ({ activeSection, onNavClick }) => {
               onClick={() => handleNavClick('contact')}
               className="btn-primary rounded-full"
             >
-              Hire Me
+              Connect
             </button>
           </div>
 
@@ -94,7 +94,7 @@ const Header = ({ activeSection, onNavClick }) => {
                 onClick={() => handleNavClick('contact')}
                 className="btn-primary w-full mt-4"
               >
-                Hire Me
+                Connect
               </button>
             </nav>
           </div>

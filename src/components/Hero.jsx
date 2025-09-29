@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faDribbble } from '@fortawesome/free-brands-svg-icons'
+
 
 const Hero = () => {
   const roles = [
@@ -49,13 +49,13 @@ const Hero = () => {
               <h1 className="text-5xl md:text-7xl font-bold text-shadow-lg">
                 <span className="text-white">ISHIMWE</span>
                 <br />
-                <span className="gradient-text">AMANI SAMUEL</span>
+                <span className="text-primary-500">AMANI SAMUEL</span>
               </h1>
 
               <div className="h-16 flex items-center justify-center lg:justify-start">
                 <span className="text-xl md:text-2xl text-dark-300">
                   I'm a{' '}
-                  <span className="gradient-text font-semibold">
+                  <span className="text-primary-500 font-semibold">
                     {text}
                     <span className="animate-pulse">|</span>
                   </span>

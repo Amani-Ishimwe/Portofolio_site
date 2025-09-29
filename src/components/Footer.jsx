@@ -39,7 +39,7 @@ const Footer = () => {
                 alt="Amani Samuel Logo"
                 className="w-10 h-10 rounded-lg object-contain"
               />
-              <span className="text-2xl font-bold gradient-text">Amani Samuel</span>
+              <span className="text-2xl font-bold text-primary-500">Amani Samuel</span>
             </div>
 
             <p className="text-dark-300 leading-relaxed mb-6 max-w-md">
