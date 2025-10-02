@@ -34,7 +34,8 @@ const Header = ({ activeSection, onNavClick }) => {
               src="/logo.svg" 
               alt="Amani Logo" 
               className="w-10 h-10"
-            />
+            /> 
+            <span className="text-primary-500 font-bold">Amani</span>
           </div>
 
           {/* Desktop Navigation */}
