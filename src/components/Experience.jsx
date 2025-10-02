@@ -96,7 +96,7 @@ const Experience = () => {
       {/* Education Section */}
       <div className="mt-20">
         <h3 className="text-3xl font-bold text-center text-white mb-12">
-          Education & <span className="gradient-text">Certifications</span>
+          Education & <span className="text-primary-500">Certifications</span>
         </h3>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
