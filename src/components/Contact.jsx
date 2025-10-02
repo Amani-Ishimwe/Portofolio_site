@@ -133,26 +133,26 @@ const Contact = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="name" className="block text-white font-medium mb-2">Name *</label>
-                <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} placeholder="Your name" className="w-full px-4 py-3 bg-dark-800 border rounded-lg focus:outline-none focus:ring-2 transition-all duration-300" />
+                <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} placeholder="Your name" className="w-full px-4 py-3 bg-dark-800  rounded-lg focus:outline-none focus:ring-2 transition-all duration-300" />
                 {errors.name && <p className="text-red-400 text-sm mt-1">{errors.name}</p>}
               </div>
 
               <div>
                 <label htmlFor="email" className="block text-white font-medium mb-2">Email *</label>
-                <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} placeholder="your.email@example.com" className="w-full px-4 py-3 bg-dark-800 border rounded-lg focus:outline-none focus:ring-2 transition-all duration-300" />
+                <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} placeholder="your.email@example.com" className="w-full px-4 py-3 bg-dark-800  rounded-lg focus:outline-none focus:ring-2 transition-all duration-300" />
                 {errors.email && <p className="text-red-400 text-sm mt-1">{errors.email}</p>}
               </div>
             </div>
 
             <div>
               <label htmlFor="subject" className="block text-white font-medium mb-2">Subject *</label>
-              <input type="text" id="subject" name="subject" value={formData.subject} onChange={handleChange} placeholder="Project inquiry" className="w-full px-4 py-3 bg-dark-800 border rounded-lg focus:outline-none focus:ring-2 transition-all duration-300" />
+              <input type="text" id="subject" name="subject" value={formData.subject} onChange={handleChange} placeholder="Project inquiry" className="w-full px-4 py-3 bg-dark-800  rounded-lg focus:outline-none focus:ring-2 transition-all duration-300" />
               {errors.subject && <p className="text-red-400 text-sm mt-1">{errors.subject}</p>}
             </div>
 
             <div>
               <label htmlFor="message" className="block text-white font-medium mb-2">Message *</label>
-              <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows={6} placeholder="Tell me about your project..." className="w-full px-4 py-3 bg-dark-800 border rounded-lg focus:outline-none focus:ring-2 transition-all duration-300 resize-none" />
+              <textarea id="message" name="message" value={formData.message} onChange={handleChange} rows={6} placeholder="Tell me about your project..." className="w-full px-4 py-3 bg-dark-800 rounded-lg focus:outline-none focus:ring-2 transition-all duration-300 resize-none" />
               {errors.message && <p className="text-red-400 text-sm mt-1">{errors.message}</p>}
             </div>
 
