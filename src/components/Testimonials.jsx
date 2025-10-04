@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { FaQuoteLeft, FaStar, FaChevronLeft, FaChevronRight } from 'react-icons/fa'
 
+
+
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
 

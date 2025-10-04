@@ -1,5 +1,6 @@
 import { FaCode, FaPalette, FaServer } from 'react-icons/fa'
 
+
 const About = () => {
   const expertise = [
     {

@@ -2,6 +2,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaInstagram } from 'react-ic
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 

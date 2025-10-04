@@ -5,6 +5,7 @@ import {
 } from 'react-icons/fa'
 import { SiTypescript, SiMongodb, SiPostgresql, SiTensorflow, SiSolidity } from 'react-icons/si'
 
+
 const Skills = () => {
   const [activeCategory, setActiveCategory] = useState('all')
 

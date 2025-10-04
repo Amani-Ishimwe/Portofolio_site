@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { FaGithub, FaExternalLinkAlt, FaReact, FaNodeJs, FaPaintBrush, FaHtml5, FaCss3 } from 'react-icons/fa'
 import { SiTypescript, SiMongodb, SiPostgresql, SiTailwindcss } from 'react-icons/si'
 
+
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all')
 
