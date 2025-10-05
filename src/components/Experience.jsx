@@ -3,16 +3,16 @@ import { FaBriefcase, FaCalendarAlt, FaMapMarkerAlt } from 'react-icons/fa'
 
 const Experience = () => {
   const experiences = [
-    // {
-    //   id: 1,
-    //   title: 'UI/UX Designer',
-    //   company: 'Blink Technologies',
-    //   period: '2025 - Present',
-    //   location: 'Remote',
-    //   description: 'A tech company that focuses on delivering cutting-edge solutions to clients worldwide.',
-    //   technologies: ['Figma', 'Adobe XD', 'Framer'],
-    //   type: 'Part-time'
-    // }
+     {
+      id: 1,
+      title: 'UI/UX Designer',
+      company: 'Blink Technologies',
+      period: '2025 - Present',
+      location: 'Remote',
+      description: 'A tech company that focuses on delivering cutting-edge solutions to clients worldwide.',
+      technologies: ['Figma', 'Adobe XD', 'Framer'],
+      type: 'Part-time'
+     }
   ]
 
   return (
