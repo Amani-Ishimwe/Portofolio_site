@@ -34,6 +34,7 @@ export default {
         }
       },
       fontFamily: {
+        'instrument':['Instrument Serif', 'serif'],
         'sans': ['Jost', 'sans-serif'],
         'mono': ['JetBrains Mono', 'monospace'],
       },

@@ -8,7 +8,8 @@ const Hero = () => {
   const roles = [
     'FRONTEND DEVELOPER',
     'BACKEND DEVELOPER',
-    'UI/UX DESIGNER'
+    'UI/UX DESIGNER',
+    'GRAPHIC DESIGNER'
   ]
 
   const [text, setText] = useState('')
@@ -49,7 +50,7 @@ const Hero = () => {
               <h1 className="text-5xl md:text-7xl font-bold text-shadow-lg">
                 <span className="text-white">ISHIMWE</span>
                 <br />
-                <span className="text-primary-500">AMANI SAMUEL</span>
+                <span className="text-primary-500 font-instrument italic">AMANI SAMUEL</span>
               </h1>
 
               <div className="h-16 flex items-center justify-center lg:justify-start">
@@ -63,7 +64,7 @@ const Hero = () => {
               </div>
             </div>
 
-            <p className="text-lg md:text-xl text-dark-300 max-w-2xl mx-auto lg:mx-0">
+            <p className="text-xl md:text-xl text-dark-300 max-w-2xl mx-auto lg:mx-0">
               Passionate about building scalable web applications and creating
               engaging user experiences.
             </p>
