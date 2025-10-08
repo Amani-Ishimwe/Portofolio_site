@@ -48,13 +48,13 @@ const Hero = () => {
           <div className="text-center lg:text-left space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl md:text-7xl font-bold text-shadow-lg">
-                <span className="text-white">ISHIMWE</span>
+                <span className="text-white font-ibm">ISHIMWE</span>
                 <br />
                 <span className="text-primary-500 font-instrument italic">AMANI SAMUEL</span>
               </h1>
 
               <div className="h-16 flex items-center justify-center lg:justify-start">
-                <span className="text-xl md:text-2xl text-dark-300">
+                <span className="text-xl md:text-2xl text-dark-300 font-ibm">
                   I'm a{' '}
                   <span className="text-primary-500 font-semibold">
                     {text}
@@ -64,7 +64,7 @@ const Hero = () => {
               </div>
             </div>
 
-            <p className="text-xl md:text-xl text-dark-300 max-w-2xl mx-auto lg:mx-0">
+            <p className="text-xl md:text-xl text-dark-300 max-w-2xl mx-auto lg:mx-0 font-ibm">
               Passionate about building scalable web applications and creating
               engaging user experiences.
             </p>
