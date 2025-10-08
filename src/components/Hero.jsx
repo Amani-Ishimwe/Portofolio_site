@@ -48,7 +48,7 @@ const Hero = () => {
           <div className="text-center lg:text-left space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl md:text-7xl font-bold text-shadow-lg">
-                <span className="text-white font-ibm">ISHIMWE</span>
+                <span className="text-white">ISHIMWE</span>
                 <br />
                 <span className="text-primary-500 font-instrument italic">AMANI SAMUEL</span>
               </h1>
@@ -64,7 +64,7 @@ const Hero = () => {
               </div>
             </div>
 
-            <p className="text-xl md:text-xl text-dark-300 max-w-2xl mx-auto lg:mx-0 font-ibm">
+            <p className="text-xl md:text-xl text-dark-300 max-w-2xl mx-auto lg:mx-0 ">
               Passionate about building scalable web applications and creating
               engaging user experiences.
             </p>
