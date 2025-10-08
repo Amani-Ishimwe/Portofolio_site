@@ -35,7 +35,7 @@ const Header = ({ activeSection, onNavClick }) => {
               alt="Amani Logo" 
               className="w-10 h-10"
             /> 
-            <span className="text-primary-500 font-bold">Amani</span>
+            <span className="text-primary-500 font-bold font-ibm">Amani</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -44,7 +44,7 @@ const Header = ({ activeSection, onNavClick }) => {
               <button
                 key={item.id}
                 onClick={() => handleNavClick(item.id)}
-                className={`text-sm font-medium transition-all duration-300 hover:text-primary-400 ${
+                className={`text-sm font-medium font-ibm transition-all duration-300 hover:text-primary-400 ${
                   activeSection === item.id
                     ? 'text-primary-400 border-b-2 border-primary-400'
                     : 'text-dark-300'
@@ -59,7 +59,7 @@ const Header = ({ activeSection, onNavClick }) => {
           <div className="hidden md:block">
             <button 
               onClick={() => handleNavClick('contact')}
-              className="btn-primary rounded-full"
+              className="btn-primary rounded-full font-ibm"
             >
               Connect
             </button>
@@ -82,7 +82,7 @@ const Header = ({ activeSection, onNavClick }) => {
                 <button
                   key={item.id}
                   onClick={() => handleNavClick(item.id)}
-                  className={`text-left text-sm font-medium transition-all duration-300 hover:text-primary-400 ${
+                  className={`text-left text-sm font-medium font-ibm transition-all duration-300 hover:text-primary-400 ${
                     activeSection === item.id
                       ? 'text-primary-400'
                       : 'text-dark-300'
@@ -93,7 +93,7 @@ const Header = ({ activeSection, onNavClick }) => {
               ))}
               <button 
                 onClick={() => handleNavClick('contact')}
-                className="btn-primary w-full mt-4"
+                className="btn-primary w-full mt-4 font-ibm"
               >
                 Connect
               </button>

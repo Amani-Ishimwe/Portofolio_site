@@ -23,7 +23,7 @@ const About = () => {
   return (
     <div className="container mx-auto px-4">
       <div className="text-center mb-16">
-        <h2 className="section-title">About Me</h2>
+        <h2 className="section-title font-instrument italic">About Me</h2>
         <p className="section-subtitle">
           Passionate about technology and innovation, I specialize in creating cutting-edge digital solutions
         </p>
@@ -34,7 +34,7 @@ const About = () => {
         <div className="space-y-6">
           <h3 className="text-3xl font-bold text-white mb-6">
             Transforming Ideas Into{' '}
-            <span className="text-primary-500">Digital Reality</span>
+            <span className="text-primary-500 font-instrument italic">Digital Reality</span>
           </h3>
           
           <p className="text-lg text-dark-300 lead-relaxed">
