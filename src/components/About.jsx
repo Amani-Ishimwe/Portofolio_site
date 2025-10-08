@@ -23,8 +23,8 @@ const About = () => {
   return (
     <div className="container mx-auto px-4">
       <div className="text-center mb-16">
-        <h2 className="section-title font-instrument italic">About Me</h2>
-        <p className="section-subtitle">
+        <h2 className="section-title font-ibm">About Me</h2>
+        <p className="section-subtitle font-ibm">
           Passionate about technology and innovation, I specialize in creating cutting-edge digital solutions
         </p>
       </div>
@@ -32,7 +32,7 @@ const About = () => {
       <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
         {/* Left Content */}
         <div className="space-y-6">
-          <h3 className="text-3xl font-bold text-white mb-6">
+          <h3 className="text-3xl font-bold text-white mb-6 font-ibm">
             Transforming Ideas Into{' '}
             <span className="text-primary-500 font-instrument italic">Digital Reality</span>
           </h3>
