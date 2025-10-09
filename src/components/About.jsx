@@ -60,15 +60,15 @@ const About = () => {
         </div>
 
         {/* Right Content - Your Photo */}
-        <div className="relative">
-          <div className="relative w-full h-96 rounded-2xl overflow-hidden shadow-lg">
-            <img 
-              src="mockup.png" 
-              alt="Amani Samuel" 
-              className="w-full h-full object-cover"
-            />
+         <div className="flex justify-center lg:justify-end -ml-6">
+            <div className="w-72 h-[28rem] md:w-96 md:h-[28rem] overflow-hidden shadow-2xl border-1 border-primary-500 rounded-full">
+              <img 
+                src="/port.jpg"   
+                alt="Amani Samuel" 
+                className="w-full h-full object-cover"
+              />
+            </div>
           </div>
-        </div>
       </div>
 
       {/* Expertise Areas */}
