@@ -59,7 +59,7 @@ const Hero = () => {
           <div className="h-16 flex items-center justify-center">
             <span className="text-xl md:text-2xl text-dark-300 font-ibm">
               I'm a{' '}
-              <span className="text-primary-500 font-semibold">
+              <span className="text-primary-500 font-semibold font-instrument italic">
                 {text}
                 <span className="animate-pulse">|</span>
               </span>
