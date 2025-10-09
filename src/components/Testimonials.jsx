@@ -115,19 +115,19 @@ const Testimonials = () => {
       <div className="grid md:grid-cols-4 gap-8 mt-20">
         <div className="text-center">
           <div className="text-4xl font-bold gradient-text mb-2">100%</div>
-          <div className="text-dark-300">Client Satisfaction</div>
+          <div className="text-dark-300 font-instrument italic">Client Satisfaction</div>
         </div>
         <div className="text-center">
           <div className="text-4xl font-bold gradient-text mb-2">5+</div>
-          <div className="text-dark-300">Projects Completed</div>
+          <div className="text-dark-300 font-instrument italic">Projects Completed</div>
         </div>
         <div className="text-center">
           <div className="text-4xl font-bold gradient-text mb-2">1+</div>
-          <div className="text-dark-300">Happy Clients</div>
+          <div className="text-dark-300 font-instrument italic">Happy Clients</div>
         </div>
         <div className="text-center">
           <div className="text-4xl font-bold gradient-text mb-2">5.0</div>
-          <div className="text-dark-300">Average Rating</div>
+          <div className="text-dark-300 font-instrument italic">Average Rating</div>
         </div>
       </div>
 

@@ -37,7 +37,7 @@ export default {
         'instrument':['Instrument Serif', 'serif'],
         'sans': ['Jost', 'sans-serif'],
         'mono': ['JetBrains Mono', 'monospace'],
-        'ibm': ['"IBM Plex Mono"', 'monospace']
+        'ibm': ['Prompt', 'monospace']
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',

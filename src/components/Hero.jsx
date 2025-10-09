@@ -5,8 +5,7 @@ import { faXTwitter } from '@fortawesome/free-brands-svg-icons'
 
 const Hero = () => {
   const roles = [
-    'FRONTEND DEVELOPER',
-    'BACKEND DEVELOPER',
+    'SOFTWARE ENGINEER',
     'UI/UX DESIGNER',
     'GRAPHIC DESIGNER'
   ]
