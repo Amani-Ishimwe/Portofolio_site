@@ -98,7 +98,7 @@ const Footer = () => {
               ))}
             </div>
 
-            <div className="mt-8">
+            {/* <div className="mt-8">
               <h4 className="text-white font-medium mb-4">Stay Updated</h4>
               <div className="flex justify-center md:justify-start">
                 <div className="flex w-full max-w-xs">
@@ -112,7 +112,7 @@ const Footer = () => {
                   </button>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -131,7 +131,7 @@ const Footer = () => {
 
           <div className="text-center mt-6">
             <p className="text-dark-400 text-sm">
-              Made with ❤️ by Amani Samuel using React & Tailwind CSS
+              Made with  by Amani Samuel using React & Tailwind CSS
             </p>
           </div>
         </div>

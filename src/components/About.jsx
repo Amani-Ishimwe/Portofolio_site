@@ -50,11 +50,11 @@ const About = () => {
           <div className="grid grid-cols-3 gap-6 pt-8">
             <div className="text-center">
               <div className="text-3xl font-bold text-primary-500 mb-2">5+</div>
-              <div className="text-dark-300">Projects Completed</div>
+              <div className="text-dark-300 font-instrument italic">Projects Completed</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-primary-500 mb-2">1+</div>
-              <div className="text-dark-300">Years Experience</div>
+              <div className="text-dark-300 font-instrument italic">Years Experience</div>
             </div>
           </div>
         </div>

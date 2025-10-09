@@ -41,10 +41,10 @@ const Hero = () => {
   return (
     <section
       className="min-h-screen flex items-center justify-center text-center px-4 relative overflow-hidden
-  bg-[radial-gradient(circle,rgba(255,255,255,0.05)_1px,transparent_1px)]
-  [background-size:40px_40px]
-  before:absolute before:inset-0 before:bg-[linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.1)_1px,transparent_1px)]
-  before:bg-[size:80px_80px] before:pointer-events-none"
+      bg-[radial-gradient(circle,rgba(255,255,255,0.05)_1px,transparent_1px)]
+      [background-size:40px_40px]
+      before:absolute before:inset-0 before:bg-[linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.1)_1px,transparent_1px)]
+      before:bg-[size:80px_80px] before:pointer-events-none"
     >
       <div className="space-y-8 max-w-3xl relative z-10">
         {/* Name and Role */}

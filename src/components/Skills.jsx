@@ -111,15 +111,15 @@ const Skills = () => {
       <div className="mt-16 grid md:grid-cols-3 gap-8">
         <div className="text-center">
           <div className="text-4xl font-bold gradient-text mb-2">9+</div>
-          <div className="text-dark-300">Technologies</div>
+          <div className="text-dark-300 font-instrument italic">Technologies</div>
         </div>
         <div className="text-center">
           <div className="text-4xl font-bold gradient-text mb-2">3</div>
-          <div className="text-dark-300">Categories</div>
+          <div className="text-dark-300 font-instrument italic">Categories</div>
         </div>
         <div className="text-center">
           <div className="text-4xl font-bold gradient-text mb-2">1+</div>
-          <div className="text-dark-300">Years Experience</div>
+          <div className="text-dark-300 font-instrument italic">Years Experience</div>
         </div>
       </div>
     </div>
