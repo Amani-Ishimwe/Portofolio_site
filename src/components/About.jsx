@@ -32,7 +32,7 @@ const About = () => {
       <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
         {/* Left Content */}
         <div className="space-y-6">
-          <h3 className="text-3xl font-bold text-white mb-6 font-ibm">
+          <h3 className="text-3xl font-bold text-white mb-6 ">
             Transforming Ideas Into{' '}
             <span className="text-primary-500 font-instrument italic">Digital Reality</span>
           </h3>
