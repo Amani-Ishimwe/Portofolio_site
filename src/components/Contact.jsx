@@ -1,9 +1,7 @@
 import { useState } from 'react';
-import emailjs from '@emailjs/browser';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
-
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -47,34 +45,35 @@ const Contact = () => {
     if (errors[name]) setErrors(prev => ({ ...prev, [name]: '' }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validateForm()) return;
 
     setIsSubmitting(true);
 
-    const serviceID = 'service_vpltotq';
-    const templateID = 'template_dx7ib5k';
-    const publicKey = '-NbGLJC-isqrb5eVs';
+    try {
+      const response = await fetch('http://localhost:3000/email/send', { 
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
 
-    const templateParams = {
-      name: formData.name,
-      email: formData.email,
-      subject: formData.subject,
-      message: formData.message,
-      time: new Date().toLocaleString()
-    };
+      const data = await response.json();
 
-    emailjs.send(serviceID, templateID, templateParams, publicKey)
-      .then(() => {
+      if (data.success) {
         setSubmitSuccess(true);
         setFormData({ name: '', email: '', subject: '', message: '' });
         setTimeout(() => setSubmitSuccess(false), 5000);
-      })
-      .catch(error => {
-        console.error('Email send error:', error);
-      })
-      .finally(() => setIsSubmitting(false));
+      } else {
+        console.log('Backend error:', data.message);
+        alert(' Message failed to send.');
+      }
+    } catch (error) {
+      console.log('Network or server error:', error);
+      alert(' Could not connect to the server.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -85,7 +84,7 @@ const Contact = () => {
       </div>
 
       <div className="grid lg:grid-cols-2 gap-12">
-        {/* Contact Information */}
+        {/* Contact Info */}
         <div className="space-y-8">
           <div>
             <h3 className="text-2xl font-bold text-white mb-6">Let's <span className="text-primary-500">Connect</span></h3>
@@ -134,20 +133,20 @@ const Contact = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="name" className="block text-white font-medium mb-2">Name *</label>
-                <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} placeholder="Your name" className="w-full px-4 py-3 bg-dark-800  rounded-lg focus:outline-none focus:ring-2 transition-all duration-300" />
+                <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} placeholder="Your name" className="w-full px-4 py-3 bg-dark-800 rounded-lg focus:outline-none focus:ring-2 transition-all duration-300" />
                 {errors.name && <p className="text-red-400 text-sm mt-1">{errors.name}</p>}
               </div>
 
               <div>
                 <label htmlFor="email" className="block text-white font-medium mb-2">Email *</label>
-                <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} placeholder="your.email@example.com" className="w-full px-4 py-3 bg-dark-800  rounded-lg focus:outline-none focus:ring-2 transition-all duration-300" />
+                <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} placeholder="your.email@example.com" className="w-full px-4 py-3 bg-dark-800 rounded-lg focus:outline-none focus:ring-2 transition-all duration-300" />
                 {errors.email && <p className="text-red-400 text-sm mt-1">{errors.email}</p>}
               </div>
             </div>
 
             <div>
               <label htmlFor="subject" className="block text-white font-medium mb-2">Subject *</label>
-              <input type="text" id="subject" name="subject" value={formData.subject} onChange={handleChange} placeholder="Project inquiry" className="w-full px-4 py-3 bg-dark-800  rounded-lg focus:outline-none focus:ring-2 transition-all duration-300" />
+              <input type="text" id="subject" name="subject" value={formData.subject} onChange={handleChange} placeholder="Project inquiry" className="w-full px-4 py-3 bg-dark-800 rounded-lg focus:outline-none focus:ring-2 transition-all duration-300" />
               {errors.subject && <p className="text-red-400 text-sm mt-1">{errors.subject}</p>}
             </div>
 
