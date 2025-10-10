@@ -23,7 +23,7 @@ const About = () => {
   return (
     <div className="container mx-auto px-4">
       <div className="text-center mb-16">
-        <h2 className="section-title font-ibm">About Me</h2>
+        <h2 className="section-title ">About Me</h2>
         <p className="section-subtitle">
           Passionate about technology and innovation, I specialize in creating cutting-edge digital solutions
         </p>
