@@ -105,7 +105,7 @@ const Testimonials = () => {
                 </div>
 
                 {/* Testimonial Text */}
-                <blockquote className="text-xl text-white text-center leading-relaxed mb-8">
+                <blockquote className="text-xl text-white text-center leading-relaxed mb-8 font-instrument italic">
                   "{currentTestimonial.text}"
                 </blockquote>
 
@@ -117,11 +117,11 @@ const Testimonials = () => {
                     </span>
                   </div>
                   <div className="text-center">
-                    <h4 className="text-lg font-semibold text-white">
+                    <h4 className="text-lg font-semibold text-white font-instrument italic">
                       {currentTestimonial.name}
                     </h4>
-                    <p className="text-primary-400">{currentTestimonial.position}</p>
-                    <p className="text-dark-300 text-sm">{currentTestimonial.company}</p>
+                    <p className="text-primary-400 font-instrument italic">{currentTestimonial.position}</p>
+                    <p className="text-dark-300 text-sm font-instrument italic">{currentTestimonial.company}</p>
                   </div>
                 </div>
               </div>

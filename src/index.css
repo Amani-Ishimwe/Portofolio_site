@@ -13,7 +13,7 @@
   }
   
   body {
-    @apply bg-[#edeefc] text-white font-ibm;
+    @apply bg-[#edeefc] text-white font-instrument italic;
   }
 }
 
