@@ -15,7 +15,7 @@ const Contact = () => {
   const [submitSuccess, setSubmitSuccess] = useState(false);
 
   const contactInfo = [
-    { icon: <FaEnvelope />, title: 'Email', value: 'amanisamuel10@gmail.com', link: 'mailto:amanisamuel10@gmail.com' },
+    { icon: <FaEnvelope />, title: 'Email', value: 'amaniishimwe36@gmail.com', link: 'mailto:amaniishimwe36@gmail.com' },
     { icon: <FaPhone />, title: 'Phone', value: '+250 791 515 013', link: 'tel:+250791515013' },
     { icon: <FaMapMarkerAlt />, title: 'Location', value: 'Kigali, Rwanda', link: '#' }
   ];
