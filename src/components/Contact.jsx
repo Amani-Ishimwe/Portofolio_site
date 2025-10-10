@@ -52,7 +52,7 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('http://localhost:3000/email/send', { 
+      const response = await fetch('https://email-backend-rho-teal.vercel.app/email/send', { 
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
