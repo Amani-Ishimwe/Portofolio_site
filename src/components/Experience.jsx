@@ -11,7 +11,7 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      title: "Chief Product Design",
+      title: "Chief Product Designer",
       company: "Blink Technologies",
       period: "2025 - Present",
       location: "Remote",
