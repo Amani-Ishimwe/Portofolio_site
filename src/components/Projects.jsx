@@ -110,6 +110,18 @@ const Projects = () => {
       github: 'https://github.com/Amani-Ishimwe/Portofolio_site.git',
       live: 'https://amaniportofolio.netlify.app/',
       featured: false
+    },
+    {
+      id: 9,
+      title: 'Blink Technologies',   
+      description: 'A Software Company That Provides Solutions to All Software related Challenges',
+      image: '/reactjsx.jpg',
+      category: 'ui/ux',
+      technologies: ['Figma'],
+      icons: [<FaReact />, <SiTailwindcss />],
+      github: 'https://github.com/Amani-Ishimwe/Portofolio_site.git',
+      live: 'https://amaniportofolio.netlify.app/',
+      featured: false
     }
   ]
 
