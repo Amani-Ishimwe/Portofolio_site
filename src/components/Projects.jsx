@@ -119,8 +119,8 @@ const Projects = () => {
       category: 'ui/ux',
       technologies: ['Figma'],
       icons: [<FaReact />, <SiTailwindcss />],
-      github: 'https://github.com/Amani-Ishimwe/Portofolio_site.git',
-      live: 'https://amaniportofolio.netlify.app/',
+      github: '#',
+      live: 'https://www.blinktechnologiz.com/',
       featured: false
     }
   ]
